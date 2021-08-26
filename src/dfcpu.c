@@ -6,5 +6,7 @@ int dfcpu(char usage[], char args[]) {
     perror("No something\n");
     exit(EXIT_FAILURE);
   }
-  printf("Hello world!");
+  else if(usage[0] == "hello") {
+    printf("Hello world!");
+  }
 }
