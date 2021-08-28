@@ -8,5 +8,10 @@ int dfcpu(char usage[], char args[]) {
   }
   else if(usage[0] == "hello") {
     printf("Hello world!");
+    return 0;
+  }
+  else if(usage[0] == "asm") {
+    printf("Can't assemble yet");
+    return 0;
   }
 }
