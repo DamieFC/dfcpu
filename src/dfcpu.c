@@ -11,7 +11,20 @@ int dfcpu(char usage[], char args[]) {
     return 0;
   }
   else if(usage[0] == "asm") {
-    printf("Can't assemble yet");
-    return 0;
+    if(!args) {
+      perror("No arguments");
+      exit(EXIT_FAILURE);
+    }
+    else {
+      org_asm(args[0]);
+    }
+  }
+}
+
+// Org-asm
+
+void org_asm(FILE* file) {
+  if(!file){
+    perror(No file);
   }
 }
