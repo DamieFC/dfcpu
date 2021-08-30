@@ -1,3 +1,3 @@
 # Makefile for DFCPU
 all: 
-	gcc dfcpu.c -o dfcpu
+	gcc dfcpu.c -o dfcpu -I./include
