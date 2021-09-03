@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <org_asm.h>
+
 int dfcpu(char usage[], char args[]) {
   if(!usage || !args) {
-    perror("No something\n");
+    perror("No something. Either no usage or no args.\n");
     exit(EXIT_FAILURE);
   }
   else if(usage[0] == "hello") {
@@ -11,20 +13,17 @@ int dfcpu(char usage[], char args[]) {
     return 0;
   }
   else if(usage[0] == "asm") {
-    if(!args) {
-      perror("No arguments");
-      exit(EXIT_FAILURE);
-    }
-    else {
-      org_asm(args[0]);
-    }
+    org_asm(args[0]);
   }
 }
 
-// Org-asm
-
-void org_asm(FILE* file) {
-  if(!file){
-    perror(No file);
+int org_asm(char file[]) {
+  if(!file) {
+    perror("Bruh there's no file you nitwit."); // First time I've ever used nitwit in my code (that's for the record)
+    exit(EXIT_FAILURE);
+  }
+  else {
+    printf("Can't assemble yet");
+    return 0;
   }
 }
