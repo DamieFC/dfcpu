@@ -14,7 +14,7 @@ int dfcpu(char usage[], char args[]) {
     printf("Hello world!");
     return 0;
   }
-  else if(strcmp(usage[0] == "asm") == 0) {
+  else if(strcmp(usage[0], "asm") == 0) {
     org_asm(args[0]);
   }
 }
