@@ -15,4 +15,4 @@ make all
 ```
 ## Running
 There's nothing TO run.
-## Notice: this idea came about before [sgcpu and sg01](https://github.com/segfaultdev/sgcpu) so I'm not copying
+## Notice: this idea came about before I learned about [sgcpu and sg01](https://github.com/segfaultdev/sgcpu) so I'm not copying. IG Seg has been doing that for awhile but it was my own idea.
