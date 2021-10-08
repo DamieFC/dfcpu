@@ -16,6 +16,6 @@ jobs:
     - name: cd src
       run: cd src
     - name: gcc
-      run: gcc dfcpu -o dfcpu -I./include -nostartfiles
+      run: gcc dfcpu.c -o dfcpu -I./include -nostartfiles
     - name: ./dfcpu
       run: ./dfcpu
