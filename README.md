@@ -11,8 +11,11 @@ Idk why you'd want to but ok
 git clone https://github.com/DamieFC/dfcpu
 cd dfcpu
 cd src
-make all
+gcc dfcpu.c -o dfcpu -I./include -nostartfiles 
 ```
 ## Running
-There's nothing TO run.
+```
+./dfcpu
+```
+It segfaults with options.
 ## Notice: this idea came about before I learned about [sgcpu and sg01](https://github.com/segfaultdev/sgcpu) so I'm not copying. IG Seg has been doing that for awhile but it was my own idea.
