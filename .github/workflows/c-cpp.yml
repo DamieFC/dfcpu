@@ -15,8 +15,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: cd src
       run: cd src
-    - name: make all
-      run: make all
+    - name: chmod +x build.sh
+      run: chmod +x build.sh
+    - name: ./build.sh
+      run: ./build.sh
     - name: ./dfcpu
       run: ./dfcpu
     - name: make check
